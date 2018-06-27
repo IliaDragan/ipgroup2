@@ -1,0 +1,47 @@
+name = IPGroup theme
+description = IPGroup theme
+core = 7.x
+base theme = bootstrap
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = 'vendor/theme/css/bootstrap.min.css'
+stylesheets[all][] = 'vendor/theme/css/font-awesome.css'
+stylesheets[all][] = 'vendor/theme/css/ionicons.css'
+stylesheets[all][] = 'vendor/theme/css/flaticon.css'
+stylesheets[all][] = 'vendor/theme/css/simple-line-icons.css'
+stylesheets[all][] = 'vendor/theme/css/style.css'
+stylesheets[all][] = 'vendor/theme/css/index.css'
+stylesheets[all][] = 'vendor/theme/css/header.css'
+stylesheets[all][] = 'vendor/theme/css/footer.css'
+stylesheets[all][] = 'vendor/theme/css/theme-color/ipg.css'
+
+;stylesheets[all][] = 'css/style.css'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+scripts[] = 'vendor/theme/js/tether.min.js'
+scripts[] = 'vendor/theme/js/bootstrap.min.js'
+
+
+; Disable the CDN provider so compiled source files can be used.
+settings[bootstrap_cdn] = ''
