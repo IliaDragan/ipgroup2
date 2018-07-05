@@ -16,19 +16,16 @@
               <div class="card bg-white">
                 <div class="card-content">
                   <section class="logo text-center">
-                    <h2><?php print t('Log in'); ?></h2>
+                    <h2><?php print t('Request new password'); ?></h2>
                   </section>
                   <form class="form-horizontal ng-pristine ng-valid">
                     <fieldset>
                       <div class="form-group">
                         <?php print drupal_render($form['name']); ?>
                       </div>
-                      <div class="form-group">
-                        <?php print drupal_render($form['pass']); ?>
-                      </div>
                     </fieldset>
                     <div class="card-action no-border text-right">
-                      <?php print drupal_render_children($form); ?>
+                      <?php print drupal_render_children($form) ?>
                     </div>
                   </form>
                 </div>
