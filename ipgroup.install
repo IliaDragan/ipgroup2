@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ *
+ * Processes logic during profile installation.
+ */
+
+
+/**
+ * Implements hook_install().
+ */
+function ipgroup_install() {
+  theme_enable('bootstrap');
+  theme_enable('ipgroup');
+  theme_enable('seven');
+
+  variable_set('theme_default', 'ipgroup');
+  variable_set('admin_theme', 'seven');
+  variable_set('node_admin_theme', 1);
+
+  $item = [
+    'link_title' => 'Home',
+    'link_path' => '<front>',
+    'menu_name' => 'main-menu',
+  ];
+  menu_link_save($item);
+
+  menu_rebuild();
+}
+
